@@ -1,0 +1,39 @@
+.bigContainer{
+  width: 100vw;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(50px, 300px));
+  gap: 10px;
+}
+.option{
+  background-color: crimson;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.option:hover{
+  box-shadow: 0 0 10px 5px black;
+  transition: box-shadow .1s ease-out;
+}
+.victory-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+h2{
+  background-color:  cornflowerblue;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .option{
+    font-size: 2rem;
+  }
+}
+

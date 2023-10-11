@@ -1,0 +1,10 @@
+
+<button (click)="startGame()">Start Game</button>
+<div class="bigContainer" *ngIf="empezar">
+  <div *ngFor="let piece of pieces"  class="option" (click)="existencia(piece)">
+    <span  >{{piece}}</span>
+  </div>
+</div>
+<div class="victory-container">
+  <h2>{{victory}}</h2>
+</div>
